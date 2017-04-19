@@ -1,9 +1,14 @@
-# api documentation for  [mailgen (v2.0.2)](https://github.com/eladnava/mailgen#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-mailgen.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-mailgen) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-mailgen.svg)](https://travis-ci.org/npmdoc/node-npmdoc-mailgen)
+# npmdoc-mailgen
+
+#### api documentation for  [mailgen (v2.0.2)](https://github.com/eladnava/mailgen#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-mailgen.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-mailgen) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-mailgen.svg)](https://travis-ci.org/npmdoc/node-npmdoc-mailgen)
+
 #### Generates clean, responsive HTML e-mails for sending transactional mail.
 
-[![NPM](https://nodei.co/npm/mailgen.png?downloads=true)](https://www.npmjs.com/package/mailgen)
+[![NPM](https://nodei.co/npm/mailgen.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/mailgen)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-mailgen/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-mailgen_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-mailgen/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-mailgen/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-mailgen/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-mailgen/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-mailgen/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-mailgen/build/screenCapture.npmPackageListing.svg)
 
@@ -39,13 +44,11 @@
     "main": "index.js",
     "maintainers": [
         {
-            "name": "eladnava",
-            "email": "eladnava@gmail.com"
+            "name": "eladnava"
         }
     ],
     "name": "mailgen",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/eladnava/mailgen.git"
@@ -56,16 +59,6 @@
     "version": "2.0.2"
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module mailgen](#apidoc.module.mailgen)
-
-
-
-# <a name="apidoc.module.mailgen"></a>[module mailgen](#apidoc.module.mailgen)
 
 
 
