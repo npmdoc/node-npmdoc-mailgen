@@ -61,12 +61,59 @@
 
     <li class="apidocModuleLi"><a href="#apidoc.module.mailgen">module mailgen</a><ol>
 
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.mailgen.mailgen">
+            function <span class="apidocSignatureSpan"></span>mailgen
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
     </ol></li>
 
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.mailgen" id="apidoc.module.mailgen">module mailgen</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.mailgen.mailgen" id="apidoc.element.mailgen.mailgen">
+        function <span class="apidocSignatureSpan"></span>mailgen
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Mailgen(options) {
+    // Set options as instance members
+    this.theme = options.theme;
+    this.product = options.product;
+    this.themeName = (typeof this.theme === &#x27;string&#x27; &#x26;&#x26; this.theme) ? this.theme : &#x27;default&#x27;;
+
+    // No product?
+    if (!this.product || typeof this.product !== &#x27;object&#x27;) {
+        throw new Error(&#x27;Please provide the `product` object.&#x27;);
+    }
+
+    // No product name or link?
+    if (!this.product.name || !this.product.link) {
+        throw new Error(&#x27;Please provide the product name and link.&#x27;);
+    }
+
+    // Support for custom text direction (fallback to LTR)
+    this.textDirection = options.textDirection || &#x27;ltr&#x27;;
+
+    // Support for custom copyright (fallback to sensible default)
+    this.product.copyright = this.product.copyright || &#x27;&#x26;copy; &#x27; + new Date().getFullYear() + &#x27; &#x3c;a href=&#x22;&#x27; + this.product.link + &#x27;&#x22;
+target=&#x22;_blank&#x22;&#x3e;&#x27; + this.product.name + &#x27;&#x3c;/a&#x3e;. All rights reserved.&#x27;;
+
+    // Cache theme files for later to avoid spamming fs.readFileSync()
+    this.cacheThemes();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 </div>
 
